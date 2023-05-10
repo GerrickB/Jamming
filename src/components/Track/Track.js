@@ -1,20 +1,20 @@
 export const tracks = [
   {
     id: 0,
-    name: '',
-    artist: '',
-    album: ''
+    name: 'Hold On Tight',
+    artist: 'aespa',
+    album: 'Hold On Tight'
   },
   {
     id: 1,
-    name: '',
-    artist: '',
-    album: ''
+    name: 'Karma',
+    artist: 'Taylor Swift',
+    album: 'Midnights'
   },
   {
     id: 2,
-    name: '',
-    artist: '',
-    album: ''
+    name: 'Summertime Sadness',
+    artist: 'Lana Del Rey',
+    album: 'Born To Die'
   }
 ];
