@@ -2,3 +2,12 @@ ul {
   text-align: left;
   list-style-type: none;
 }
+li {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+}
+
+li img {
+  height: 60px;
+}
