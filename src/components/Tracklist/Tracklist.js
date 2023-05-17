@@ -21,10 +21,16 @@ export default function Tracklist() {
     </li>
   ))
   return (
-    <>
-      <h2>Track List</h2>
-      <ul>{listItems}</ul>
-    </>
+    <div class="main-grid">
+      <div class='track-list'>
+        <h2>Track List</h2>
+        <ul>{listItems}</ul>
+      </div>
+      <div className="playlist">
+        <h2>playlist</h2>
+      </div>
+
+    </div>
   )
 }
 
