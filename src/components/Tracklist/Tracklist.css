@@ -17,3 +17,7 @@ li {
 li img {
   height: 60px;
 }
+
+.playlist li {
+  grid-template-columns: 80% 20%;
+}
