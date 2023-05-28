@@ -9,17 +9,6 @@ export default function Tracklist() {
   
   const [playlist, setPlaylist] = useState([]);
   const [playlistName, setPlaylistName] = useState('');
-
-  /*
-  function handleAddClick() {
-    playlist.map(song => (
-      setPlaylist([
-        ...playlist,
-        { id: song.id, name: song.name }
-      ])
-    ))
-  }
-  */
   
   function handleDeleteClick() {
     playlist.map(song => (
@@ -28,7 +17,11 @@ export default function Tracklist() {
           p.id !== song.id
         )
       )
-    ))
+    ));
+  }
+
+  function handlePlaylistNameChange(e) {
+    setPlaylistName(e.target.value);
   }
 
   const listAllTracks = tracks.map((track) => (
@@ -62,7 +55,14 @@ export default function Tracklist() {
         <ul>{listAllTracks}</ul>
       </div>
       <div className="playlist">
-        <h2>My playlist</h2>
+        <input
+          placeholder="Click to name/rename playlist"
+          value={playlistName}
+          onChange={handlePlaylistNameChange}
+        />
+        <h1>
+          {playlistName}
+        </h1>
         <Playlist newPlaylist={playlist} delete={handleDeleteClick} />
       </div>
 
